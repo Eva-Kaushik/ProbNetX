@@ -1,4 +1,4 @@
-ProbNetX: Research-Grade Bayesian Network Framework
+#### ProbNetX: Research-Grade Bayesian Network Framework
 
 Primary Author: Rohit Kaushik, Data Analyst, Hanson Professional Services, USA
 Secondary Author: Eva Kaushik, PhD, University of Tennessee, Knoxville, USA
