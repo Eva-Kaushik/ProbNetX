@@ -3,15 +3,15 @@
 Primary Author: Rohit Kaushik, Data Analyst, Hanson Professional Services, USA | Secondary Author: Eva Kaushik, PhD, University of Tennessee, Knoxville, USA
 
 ## Overview
-ProbNetX is a fully parameterizable Bayesian network framework designed to learn probabilistic dependencies from discrete datasets and perform exact inference to predict missing or unobserved variables. It emphasizes reproducibility, interpretability, and robustness, making it ideal for high-dimensional or sparse datasets in both experimental and applied research.
+ProbNetX is a fully parameterizable Bayesian network framework designed to learn probabilistic dependencies from discrete datasets and perform exact inference to predict missing or unobserved variables. It emphasizes reproducibility, interpretability, and robustness, making it ideal for high dimensional or sparse datasets in both experimental and applied research.
 
 ### 1. Conditional Probability Table (CPT) Estimation
 Inputs:
 Network structure file (.str)
 Training dataset (.csv)
-Methodology: Parses the network’s DAG to identify parent-child relationships.
+Methodology: Parses the network’s DAG to identify parent child relationships.
 Computes each node’s conditional probability distribution conditioned on its parents.
-Uses Laplace smoothing / pseudo-counts to ensure numerical stability and reduce sparse-data artifacts.
+Uses Laplace smoothing / pseudo-counts to ensure numerical stability and reduce sparse data artifacts.
 Outputs: Fully specified CPTs for all nodes, exported in canonical topological order (output.txt).
 
 ### 2. Exact Inference and Prediction
@@ -32,7 +32,7 @@ Output: Learned CPTs, predicted values for missing entries
      a. Identify parent nodes P(n)
      b. For each configuration of P(n):
           i. Count occurrences in D_train
-         ii. Apply Laplace smoothing / pseudo-counts
+         ii. Apply Laplace smoothing / pseudo counts
         iii. Compute and store conditional probabilities in CPT
 3. For each instance x in D_test:
      a. For each missing node n_missing:
@@ -43,8 +43,8 @@ Output: Learned CPTs, predicted values for missing entries
 
 ### 4. Key Advantages
 Exact Inference: Full control over CPT computation and inference logic and Probabilistically rigorous predictions without approximations.
-Robust to Sparse Data: Pseudo-counts prevent zero-frequency errors.
-Reproducible & Research-Grade: Outputs CPTs and predictions in canonical formats.
-Generalizable: Works with any discrete Bayesian network—from simple Naive Bayes to complex DAGs.
+Robust to Sparse Data: Pseudo counts prevent zero frequency errors.
+Reproducible : Outputs CPTs and predictions in canonical formats.
+Generalizable: Works with any discrete Bayesian network from simple Naive Bayes to complex DAGs.
 
-Note: ProbNetX is a reproducible, interpretable, and rigorous framework for predictive modeling, decision-support, and hypothesis testing. It is suitable for high-dimensional, sparse, or incomplete datasets in domains such as: Bioinformatics, Natural Language Processing, Finance and Experimental research
+Note: ProbNetX is a reproducible, interpretable, and rigorous framework for predictive modeling, decision-support, and hypothesis testing. It is suitable for high dimensional, sparse, or incomplete datasets in domains such as: Bioinformatics, Natural Language Processing, Finance and Experimental research
