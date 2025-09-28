@@ -42,20 +42,10 @@ Output: Learned CPTs, predicted values for missing entries
 4. Save CPTs to output.txt
 5. Save completed test data to completedTest.csv
 
-4. Naive Bayes Spam Classifier
-Node	Parents	CPT (smoothed)
-Spam	-	[0.4, 0.6]
-Free	Spam	[0.8, 0.2], [0.1, 0.9]
-Credit	Spam	[0.7, 0.3], [0.2, 0.8]
-Prediction:
-If Spam is missing, ProbNetX computes the posterior probability using observed features (Free, Credit).
-Assign Spam = 1 if posterior ≥ 0.5; otherwise assign Spam = 0.
-
-5. Key Advantages
+4. Key Advantages
 Exact Inference: Full control over CPT computation and inference logic and Probabilistically rigorous predictions without approximations.
 Robust to Sparse Data: Pseudo-counts prevent zero-frequency errors.
 Reproducible & Research-Grade: Outputs CPTs and predictions in canonical formats.
 Generalizable: Works with any discrete Bayesian network—from simple Naive Bayes to complex DAGs.
 
-6. Scientific Impact
-ProbNetX is a reproducible, interpretable, and rigorous framework for predictive modeling, decision-support, and hypothesis testing. It is suitable for high-dimensional, sparse, or incomplete datasets in domains such as: Bioinformatics, Natural Language Processing, Finance and Experimental research
+Note: ProbNetX is a reproducible, interpretable, and rigorous framework for predictive modeling, decision-support, and hypothesis testing. It is suitable for high-dimensional, sparse, or incomplete datasets in domains such as: Bioinformatics, Natural Language Processing, Finance and Experimental research
