@@ -3,10 +3,10 @@
 Primary Author: Rohit Kaushik, Data Analyst, Hanson Professional Services, USA
 Secondary Author: Eva Kaushik, PhD, University of Tennessee, Knoxville, USA
 
-Overview
+## Overview
 ProbNetX is a fully parameterizable Bayesian network framework designed to learn probabilistic dependencies from discrete datasets and perform exact inference to predict missing or unobserved variables. It emphasizes reproducibility, interpretability, and robustness, making it ideal for high-dimensional or sparse datasets in both experimental and applied research.
 
-1. Conditional Probability Table (CPT) Estimation
+### 1. Conditional Probability Table (CPT) Estimation
 Inputs:
 Network structure file (.str)
 Training dataset (.csv)
@@ -15,7 +15,7 @@ Computes each node’s conditional probability distribution conditioned on its p
 Uses Laplace smoothing / pseudo-counts to ensure numerical stability and reduce sparse-data artifacts.
 Outputs: Fully specified CPTs for all nodes, exported in canonical topological order (output.txt).
 
-2. Exact Inference and Prediction
+### 2. Exact Inference and Prediction
 Inputs: Network structure
 Learned CPTs
 Test dataset with missing values
@@ -24,7 +24,7 @@ Outputs: Completed test dataset (completedTest.csv) with imputed values, preserv
  
 Guarantees exact posterior probabilities without approximations.
 
-3. Algorithm Overview (Pseudocode)
+### 3. Algorithm Overview (Pseudocode)
 Input: Network structure S, training data D_train, test data D_test
 Output: Learned CPTs, predicted values for missing entries
 
@@ -42,7 +42,7 @@ Output: Learned CPTs, predicted values for missing entries
 4. Save CPTs to output.txt
 5. Save completed test data to completedTest.csv
 
-4. Key Advantages
+### 4. Key Advantages
 Exact Inference: Full control over CPT computation and inference logic and Probabilistically rigorous predictions without approximations.
 Robust to Sparse Data: Pseudo-counts prevent zero-frequency errors.
 Reproducible & Research-Grade: Outputs CPTs and predictions in canonical formats.
