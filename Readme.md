@@ -1,7 +1,6 @@
 # ProbNetX: Research-Grade Bayesian Network Framework
 
-Primary Author: Rohit Kaushik, Data Analyst, Hanson Professional Services, USA
-Secondary Author: Eva Kaushik, PhD, University of Tennessee, Knoxville, USA
+Primary Author: Rohit Kaushik, Data Analyst, Hanson Professional Services, USA | Secondary Author: Eva Kaushik, PhD, University of Tennessee, Knoxville, USA
 
 ## Overview
 ProbNetX is a fully parameterizable Bayesian network framework designed to learn probabilistic dependencies from discrete datasets and perform exact inference to predict missing or unobserved variables. It emphasizes reproducibility, interpretability, and robustness, making it ideal for high-dimensional or sparse datasets in both experimental and applied research.
