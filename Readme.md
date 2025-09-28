@@ -41,7 +41,7 @@ Output: Learned CPTs, predicted values for missing entries
 4. Save CPTs to output.txt
 5. Save completed test data to completedTest.csv
 
-### 4. Key Advantages
+### 4. Advantages
 Exact Inference: Full control over CPT computation and inference logic and Probabilistically rigorous predictions without approximations.
 Robust to Sparse Data: Pseudo counts prevent zero frequency errors.
 Reproducible : Outputs CPTs and predictions in canonical formats.
